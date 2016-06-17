@@ -2,6 +2,7 @@ package at.fh.swenga.jpa.controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.fluttercode.datafactory.impl.DataFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import at.fh.swenga.jpa.dao.CompanyRepository;
 import at.fh.swenga.jpa.dao.RobotRepository;
 import at.fh.swenga.jpa.model.CompanyModel;
+import at.fh.swenga.jpa.model.PlayerModel;
 import at.fh.swenga.jpa.model.RobotModel;
 
 @Controller
@@ -33,7 +35,8 @@ public class RobotController {
 	  public String handleLogin() {
 	    return "login";
 	  }
-	
+
+
 	@RequestMapping(value = { "/", "list" })
 	public String index(Model model) {
 		List<RobotModel> robots = robotRepository.findAll();

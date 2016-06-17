@@ -37,9 +37,9 @@ public class PlayerModel {
 	String password;
 
 
-    @OneToMany(mappedBy="player",fetch=FetchType.LAZY)
-    @OrderBy("name")
-    private Set<BuildingModel> buildings;
+//    @OneToMany(mappedBy="player",fetch=FetchType.LAZY)
+//    @OrderBy("name")
+//    private Set<BuildingModel> buildings;
 
 	@OneToOne(mappedBy="player",fetch=FetchType.LAZY)
 	@OrderBy("name")
@@ -86,21 +86,21 @@ public class PlayerModel {
 		this.password = password;
 	}
 	
-	public Set<BuildingModel> getBuildings() {
-		return buildings;
-	}
-
-	public void setBuildings(Set<BuildingModel> buildings) {
-		this.buildings = buildings;
-	}
-	
-	public void addBuilding(BuildingModel building) {
-		if (buildings==null) {
-			buildings= new HashSet<BuildingModel>();
-		}
-		buildings.add(building);
-	}
-	
+//	public Set<BuildingModel> getBuildings() {
+//		return buildings;
+//	}
+//
+//	public void setBuildings(Set<BuildingModel> buildings) {
+//		this.buildings = buildings;
+//	}
+//	
+//	public void addBuilding(BuildingModel building) {
+//		if (buildings==null) {
+//			buildings= new HashSet<BuildingModel>();
+//		}
+//		buildings.add(building);
+//	}
+//	
 	
 
 

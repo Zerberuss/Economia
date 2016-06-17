@@ -6,7 +6,7 @@
 <html>
 <head>
 <jsp:include page="includes/bootstrapMeta.jsp" />
-<title>Employees</title>
+<title>Login</title>
 <jsp:include page="includes/bootstrapCss.jsp" />
 </head>
 <body>
@@ -21,14 +21,22 @@
 							<c:out value="${SPRING_SECURITY_LAST_EXCEPTION.message}" />
 						</div>
 					</c:if>
-					<label for="inputEmail" class="sr-only">Email address</label>
-					<input type="text" id="username" class="form-control" 
-						placeholder="User" required autofocus name="username">
-					<label for="inputPassword" class="sr-only">Password</label>
-					<input type="password" id="password" class="form-control" 
+					<label for="inputEmail" class="sr-only">Username</label> <input
+						type="text" id="username" class="form-control" placeholder="User"
+						required autofocus name="username"> <label
+						for="inputPassword" class="sr-only">Password</label> <input
+						type="password" id="password" class="form-control"
 						placeholder="Password" required name="password">
-					<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+					<button class="btn btn-lg btn-primary btn-block" type="submit">Sign
+						in</button>
 				</form>
+				<form action="register" method="get">
+				<input type="submit" class="btn btn-lg btn-primary btn-block" value="Register here!" />
+				</form>
+
+				
+
+
 			</div>
 		</div>
 	</div>

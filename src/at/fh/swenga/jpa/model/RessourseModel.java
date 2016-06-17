@@ -24,14 +24,14 @@ import javax.persistence.Version;
 
 //NamedQueries here
 
-@NamedQueries (
-		{
-			@NamedQuery(
-					name="RessourseModel.findByDoALike",
-					query="select e from BuildingModel e where e.firstName like :name or e.lastName like :name")
-		}
-
-		)
+//@NamedQueries (
+//		{
+//			@NamedQuery(
+//					name="RessourseModel.findByDoALike",
+//					query="select e from BuildingModel e where e.firstName like :name or e.lastName like :name")
+//		}
+//
+//		)
 
 
 public class RessourseModel implements java.io.Serializable {
