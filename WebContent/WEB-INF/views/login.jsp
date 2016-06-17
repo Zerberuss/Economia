@@ -5,9 +5,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<jsp:include page="includes/bootstrapMeta.jsp" />
+<%@include file="includes/bootstrapMeta.inc"%>
 <title>Login</title>
-<jsp:include page="includes/bootstrapCss.jsp" />
+<%@include file="includes/bootstrapCss.css"%>
 </head>
 <body>
 	<div class="container" role="main">

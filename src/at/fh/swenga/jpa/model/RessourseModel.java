@@ -23,7 +23,7 @@ import javax.persistence.Version;
 @Table(name = "Ressourse")
 
 //NamedQueries here
-
+/*
 //@NamedQueries (
 //		{
 //			@NamedQuery(
@@ -32,7 +32,7 @@ import javax.persistence.Version;
 //		}
 //
 //		)
-
+*/
 
 public class RessourseModel implements java.io.Serializable {
 	
