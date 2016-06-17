@@ -7,6 +7,9 @@
 	<http>
 		<csrf disabled="true" />
 		<intercept-url pattern="/login" access="permitAll"/>
+		<intercept-url pattern="/register" access="permitAll"/>
+		<intercept-url pattern="/processRegistration" access="permitAll"/>
+		<intercept-url pattern="/regSuccess" access="permitAll"/>
 		<intercept-url pattern="/**" access="hasRole('USER')"/>
 		<intercept-url pattern="/townview" access="hasRole('ADMIN')"/>
 		<form-login login-page="/login"/>
