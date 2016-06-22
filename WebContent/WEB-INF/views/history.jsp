@@ -61,21 +61,8 @@
 	</div>
 				
 	<div class="container">
-		<div class="jumbotron">
-			<h2>
-				Hello, world!
-			</h2>
-			<p>
-				This is History
-			</p>
-			<p>
-				<a class="btn btn-primary btn-large" href="#">Learn more</a>
-			</p>
-		</div>
-	</div>
-	
-	
-	<h2>Your Last Login History:</h2>
+		<div class="jumbotron">	
+			<h2>Your Last Login History:</h2>
 					<div align = "center">
 						<div class="label label-primary" align = "center"></div>
 					</div>
@@ -111,6 +98,11 @@
 
 				</div>
 			</div>
+	
+		</div>
+	</div>
+	
+	
 	
 	
 	
