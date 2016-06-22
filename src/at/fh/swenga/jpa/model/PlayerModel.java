@@ -16,10 +16,11 @@ import javax.persistence.Table;
 import javax.persistence.Version;
 
 import org.springframework.data.annotation.Persistent;
+import org.springframework.transaction.annotation.Transactional;
 
 @Entity
 @Table(name = "player")
-
+@Transactional
 public class PlayerModel implements java.io.Serializable {
 
 	@Id
@@ -63,6 +64,8 @@ public class PlayerModel implements java.io.Serializable {
 	@OneToMany(mappedBy = "player",targetEntity=ActionModel.class, fetch = FetchType.LAZY)
 	private Set<ActionModel> actions;
 	
+	@OneToMany(mappedBy = "player",targetEntity=ActionModel.class, fetch = FetchType.LAZY)
+	private Set<HistoryModel> historys;
 
 
 	@Version
@@ -185,6 +188,21 @@ public class PlayerModel implements java.io.Serializable {
 			recruits = new HashSet<RecruitModel>();
 		}
 		recruits.add(recruit);
+	}
+	
+	public  Set<HistoryModel> getHistorys() {
+		return historys;
+	}
+	
+	public void setHistorys(Set<HistoryModel> historys) {
+		this.historys = historys;
+	}
+
+	public void addHistory(HistoryModel history) {
+		if (historys == null) {
+			historys = new HashSet<HistoryModel>();
+		}
+		historys.add(history);
 	}
 	
 	public String getRole() {

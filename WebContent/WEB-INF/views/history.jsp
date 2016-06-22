@@ -66,13 +66,53 @@
 				Hello, world!
 			</h2>
 			<p>
-				This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+				This is History
 			</p>
 			<p>
 				<a class="btn btn-primary btn-large" href="#">Learn more</a>
 			</p>
 		</div>
 	</div>
+	
+	
+	<h2>Your Last Login History:</h2>
+					<div align = "center">
+						<div class="label label-primary" align = "center"></div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1">
+							<table data-toggle="table"    data-pagination="true"
+       data-search="true" class="table table-striped">
+								<thead>
+									<tr>
+										<th>Date</th>
+										<th>ID</th>
+										<th>Typ</th>
+										<th>Info</th>
+									</tr>
+								</thead>
+								<tbody>
+									<c:forEach items="${historys}" var="userH">
+										<tr>
+											<td><fmt:formatDate value="${userH.currentLogin}"
+											pattern="dd.MM.yyyy" /></td>
+											<td>${userH.id}</td>
+											<td>${userH.type}</td>
+											<td>${userH.info}</td>
+																						
+										</tr>
+									</c:forEach>
+								</tbody>
+							</table>
+							<hr>
+						</div>
+					</div>
+
+				</div>
+			</div>
+	
+	
 	
 	
 <div id="footer">
