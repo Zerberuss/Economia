@@ -20,6 +20,7 @@
 
 	<authentication-manager>
 		<authentication-provider user-service-ref="AuthenticationManagerService">
+			<password-encoder hash="bcrypt" />
 		</authentication-provider>
 	</authentication-manager>
 

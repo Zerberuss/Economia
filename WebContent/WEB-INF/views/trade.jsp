@@ -123,7 +123,7 @@
 						  <label class="col-md-3 control-label" for="wood"></label>
 						  <div class="col-md-7">
 						    <div class="input-group">
-						      <input id="trade.wood" name="wood" class="form-control" placeholder="0" min=0 type="number" value="<c:out value="${trade.wood}"/>">
+						      <input id="trade.wood" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="wood" class="form-control" placeholder="0" min=0 type="number" value="<c:out value="${trade.wood}"/>">
 						      <span class="input-group-addon">Wood</span>
 						    </div>
 						  </div>
@@ -133,7 +133,7 @@
 						  <label class="col-md-3 control-label" for="stone"></label>
 						  <div class="col-md-7">
 						    <div class="input-group">
-						      <input id="trade.stone" name="stone" class="form-control" placeholder="0" min=0 type="number" value="<c:out value="${trade.stone}"/>">
+						      <input id="trade.stone" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="stone" class="form-control" placeholder="0" min=0 type="number" value="<c:out value="${trade.stone}"/>">
 						      <span class="input-group-addon">Stone</span>
 						    </div>
 						    
@@ -144,7 +144,7 @@
 						  <label class="col-md-3 control-label" for="food"></label>
 						  <div class="col-md-7">
 						    <div class="input-group">
-						      <input id="trade.food" name="food" class="form-control" placeholder="0" min=0 type="number" value="<c:out value="${trade.food}"/>">
+						      <input id="trade.food" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="food" class="form-control" placeholder="0" min=0 type="number" value="<c:out value="${trade.food}"/>">
 						      <span class="input-group-addon">Food</span>
 						    </div>
 						    
@@ -160,7 +160,7 @@
 						  <label class="col-md-5 control-label" for="appendedtext"></label>
 						  <div class="col-md-6">
 						    <div class="input-group">
-						      <input id="trade.price" name="price" class="form-control" placeholder="0" min=0 type="number" value="<c:out value="${trade.price}"/>">
+						      <input id="trade.price" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="price" class="form-control" placeholder="0" min=0 type="number" value="<c:out value="${trade.price}"/>">
 						      <span class="input-group-addon">Gold</span>
 						    </div>
 						    

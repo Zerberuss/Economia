@@ -150,12 +150,12 @@ public class RegisterController {
 			player.setPassword(password);
 			
 			PlayerRole playerRole = new PlayerRole(player,"ROLE_USER");
-			for (RecruitModel unit : playerList) {
-				unit.setPlayer(player);
-				if(unit.getUnitID()==2){
-					unit.setCount(5);
-				}
-			}
+			// for (RecruitModel unit : playerList) {
+			// unit.setPlayer(player);
+			// if(unit.getUnitID()==2){
+			// unit.setCount(5);
+			// }
+			// }
 	
 			System.out.println("SETTING UP Player");
 			

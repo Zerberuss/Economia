@@ -8,13 +8,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.NamedNativeQueries;
-import javax.persistence.NamedNativeQuery;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Version;
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Entity
 @Table(name = "player")
@@ -29,7 +27,7 @@ public class PlayerModel implements java.io.Serializable {
 	@Column(nullable = false, length = 70)
 	String email;
 
-	@Column(nullable = false, length = 30)
+	@Column(nullable = false, length = 60)
 	String password;
 
 	@Column(nullable = false)
@@ -81,7 +79,7 @@ public class PlayerModel implements java.io.Serializable {
 		super();
 		this.username = username;
 		this.email = email;
-		this.password = password;
+		setBCryptedPassword(password);
 		this.wood = wood;
 		this.stone = stone;
 		this.food = food;
@@ -90,11 +88,15 @@ public class PlayerModel implements java.io.Serializable {
 		this.attackPowerUnits = atk;
 		this.deffPowerUnits = deff;
 	}
-
+	public void setBCryptedPassword(String password) {
+		this.password = password;
+	}
+	
 	public String getUsername() {
 		return username;
 	}
-
+	
+	//commit comment
 	public void setUsername(String username) {
 		this.username = username;
 
@@ -113,7 +115,8 @@ public class PlayerModel implements java.io.Serializable {
 	}
 
 	public void setPassword(String password) {
-		this.password = password;
+		setBCryptedPassword(new BCryptPasswordEncoder().encode(password));
+
 	}
 
 	public int getWood() {

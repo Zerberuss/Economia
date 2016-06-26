@@ -93,7 +93,7 @@
 										<th align="center" valign="middle">Accuracy <img alt=""
 											style="width: 35px; height: 35px;"
 											src="images/ress/accuracy-icon.png"></th>
-										<th></th>
+										
 										<th align="center" valign="middle">Wood<img alt=""
 											style="width: 35px; height: 35px;"
 											src="images/ress/wood-icon.png"></th>
@@ -120,7 +120,7 @@
 											<td><p align="center" valign="middle">${recruit.deffPower}</p></td>
 											<td><p align="center" valign="middle">${recruit.accuracy}
 												</p></td>
-												<td></td>
+										
 											<td><p align="center" valign="middle">${recruit.neededWood}</p></td>
 											<td><p align="center" valign="middle">${recruit.neededStone}</p></td>
 											<td><p align="center" valign="middle">${recruit.neededFood}</p></td>
