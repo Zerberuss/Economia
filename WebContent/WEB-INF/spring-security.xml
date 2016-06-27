@@ -11,8 +11,8 @@
 		<intercept-url pattern="/regProcess" access="permitAll" />
 		<intercept-url pattern="/regSuccess" access="permitAll" />
 		<intercept-url pattern="/regFail" access="permitAll" />
-		<intercept-url pattern="/tick" access="hasAnyRole('USER','ADMIN')" />
-		<intercept-url pattern="/fill" access="hasAnyRole('USER','ADMIN')" />
+		<intercept-url pattern="/tick" access="hasAnyRole('ADMIN')" />
+		<intercept-url pattern="/fill" access="hasAnyRole('ADMIN')" />
 		<intercept-url pattern="/**" access="hasAnyRole('USER','ADMIN')" />
 		<form-login login-page="/login" />
 		<logout logout-success-url="/login" logout-url="/logout" />

@@ -77,7 +77,7 @@ public class RegisterController {
 			building2.setPlayer(admin);			//workaround, da das automatische setzen nicht funktioniert (auf drei Arten probiert, 6h weg)
 			admin.addBuilding(building2);
 			
-			BuildingModel building3 = new BuildingModel("Pr0house", "images/buildings/building3.png",  400 , 500, 0, 0, 0, 0, 20, 0);			
+			BuildingModel building3 = new BuildingModel("Pr0house", "images/buildings/building3.png", 400 , 500, 0, 0, 0, 0, 20, 0);			
 			building3.setPlayer(admin);			//workaround, da das automatische setzen nicht funktioniert (auf drei Arten probiert, 6h weg)
 			admin.addBuilding(building3);
 			
@@ -150,12 +150,12 @@ public class RegisterController {
 			player.setPassword(password);
 			
 			PlayerRole playerRole = new PlayerRole(player,"ROLE_USER");
-			// for (RecruitModel unit : playerList) {
-			// unit.setPlayer(player);
-			// if(unit.getUnitID()==2){
-			// unit.setCount(5);
-			// }
-			// }
+			 for (RecruitModel unit : playerList) {
+			 unit.setPlayer(player);
+			 if(unit.getUnitID()==2){
+			 unit.setCount(5);
+			 }
+			 }
 	
 			System.out.println("SETTING UP Player");
 			

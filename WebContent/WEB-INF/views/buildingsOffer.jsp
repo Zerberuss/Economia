@@ -116,7 +116,7 @@
 											<td></td>
 											<td>${building.neededWood}</td>
 											<td>${building.neededStone}</td>
-											<td>${building.neededWood}</td>
+											<td>${building.neededFood}</td>
 											<td>${building.neededGold}</td>
 											<td></td>
 										</tr>										
