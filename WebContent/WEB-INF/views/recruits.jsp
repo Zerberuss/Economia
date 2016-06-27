@@ -49,6 +49,7 @@
 
 	<div class="container">
 		<div class="well">
+			<br><br>
 			<h2>Prepare for fight.</h2>
 			<p>Drill militants to win against your enemys and save your
 				castle</p>

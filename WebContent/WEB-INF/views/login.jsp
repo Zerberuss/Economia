@@ -13,6 +13,7 @@
 	<div class="container" role="main">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
+				<h1>Play Economia!</h1> <br><br>
 				<c:url value="/login" var="loginUrl" />
 				<form action="${loginUrl}" method="post">
 					<h2 class="form-signin-heading">Please sign in</h2>

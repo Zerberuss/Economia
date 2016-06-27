@@ -12,7 +12,7 @@
 			<div class="col-md-4 col-md-offset-4">
 
 				<form action="regProcess" method="post" modelAttribute="player">
-					<h2 class="form-signin-heading">Please sign up</h2>
+					<h2 class="form-signin-heading">Please sign up</h2><br><br>
 					<h3 class="form-signin-heading">Enter valid information and
 						press the Sign up Button</h3>
 					<c:if test="${SPRING_SECURITY_LAST_EXCEPTION.message != null}">
